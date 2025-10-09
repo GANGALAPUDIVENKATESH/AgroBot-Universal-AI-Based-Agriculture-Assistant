@@ -33,9 +33,13 @@ ________________________________________
 Unlike numerical ML datasets, AgroBot relies on a rule-based knowledge system, mapping farming-related keywords to predefined responses.
 It covers the following domains:
 • 🌾 Crop management and irrigation scheduling
+
 • 🌱 Fertilizer and pesticide selection
+
 • ☀️ Weather patterns and soil recommendations
+
 • 🧑‍🌾 Modern and sustainable farming methods
+
 🔮 Future Enhancements:
 •	Integration with real-time weather APIs (e.g., OpenWeatherMap, IMD)
 •	Connection to IoT-based soil moisture or temperature sensors
@@ -101,8 +105,11 @@ ________________________________________
 🌟 **Future Scope**
 
 • Integrate with OpenWeatherMap API for real-time weather forecasting
+
 • Use IoT devices for soil and crop health monitoring
+
 • Add Machine Learning to personalize responses
+
 • Include voice-based interaction (Speech-to-Text) for accessibility
 
 
