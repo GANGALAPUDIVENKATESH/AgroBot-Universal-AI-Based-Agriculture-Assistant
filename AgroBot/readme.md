@@ -91,23 +91,35 @@ ________________________________________
 🚀 **Technologies Used**
 
 Component	Technology
+
 Frontend	HTML, CSS, JavaScript
+
 Backend	Python (Flask Framework)
+
 Data Handling	JSON
+
 Logic Engine	Rule-based AI chatbot
+
 UI Framework	Bootstrap (for responsive design)
 ________________________________________
 📈 **System Architecture**
 
 Frontend Layer (UI):
+
 • HTML/CSS + JS Chat Interface
+
 • AJAX-based message communication
 Backend Layer (Flask):
+
 • / → Login Page
+
 • /welcome → Chat Interface
+
 • /get → Handles user queries and returns AI responses
 Logic Layer:
+
 • Python dictionary containing agricultural responses
+
 • Optional hooks for future ML/NLP model integration
 ________________________________________
 🌟 **Future Scope**
