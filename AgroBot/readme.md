@@ -8,9 +8,13 @@ ________________________________________
 ✨** Key Benefits**
 
 • 🤖 AI-powered Chatbot — Provides instant, context-based agricultural responses.
+
 • 🌱 Bilingual Communication — Supports both English and Tamil for local accessibility.
+
 • 💬 Interactive Web Interface — Simple and user-friendly chat design for real-time interaction.
+
 • ☁️ Lightweight & Portable — Can run on any device with Python and Flask installed.
+
 • 📊 Future-Ready Integration — Designed for easy expansion with IoT, weather APIs, or ML models.
 ________________________________________
 
@@ -48,9 +52,13 @@ ________________________________________
 🧩 **Project Workflow**
 
 1️⃣ User Login → Authentication using credentials
+
 2️⃣ Access Chat Interface → Simple HTML-based chatbot UI
+
 3️⃣ User Input Sent → Flask backend handles /get requests
+
 4️⃣ Bot Response Generated → Keyword-based agricultural advice returned
+
 5️⃣ Response Displayed → Frontend dynamically updates chat window
 ________________________________________
 🛠 **Installation Guide**
