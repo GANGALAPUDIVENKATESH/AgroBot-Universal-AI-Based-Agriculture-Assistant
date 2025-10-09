@@ -24,10 +24,15 @@ ________________________________________________________________________________
 ⚙️ **Features**
 
 • 💻 Flask Web Application — Responsive UI for seamless chatting
+
 • 🗣️ AI Chatbot Engine — Handles user queries with predefined domain logic
+
 • 🔐 Login & Authentication System — Ensures personalized user access
+
 • 🌾 Agriculture Domain Expertise — Preloaded with farming-related responses
+
 • 🌐 Language Support — English and Tamil bilingual chatbot
+
 • 🧠 Expandable Design — Future integration with NLP or ML models
 _______________________________________________________________________________________________________________________________________________________________
 
@@ -36,12 +41,18 @@ Unlike traditional ML projects, AgroBot does not rely on a numerical dataset —
 Topics Covered:
 
 •	🌾 Crop management and irrigation
+
 •	🌱 Fertilizer and pesticide usage
+
 •	☀️ Weather and soil recommendations
+
 •	🧑‍🌾 Modern farming techniques and tools
 Future versions can connect to:
+
 • Weather APIs (OpenWeatherMap, IMD Data)
+
 • Crop yield prediction ML models
+
 • IoT-based soil moisture sensors
 ________________________________________________________________________________________________________________________________________________________________
 
@@ -85,9 +96,13 @@ ________________________________________________________________________________
 🚀 **Technologies Used**
 
 • **Python (Flask)** — Web framework and server-side logic
+
 • **HTML, CSS, JavaScrip**t — Frontend design & interactivity
+
 • **JSON** — Data exchange between client and server
+
 • **Rule-based AI Engine** — Agriculture chatbot responses
+
 • **Bootstrap (optional)** — Responsive styling
 __________________________________________________________________________________________________________________________________________________________________
 
