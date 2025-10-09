@@ -110,20 +110,30 @@ ________________________________________________________________________________
 
 Frontend (UI Layer):
 •	HTML/CSS + JS chat interface
+
 •	AJAX calls for message handling
 Backend (Flask):
+
 •	/ → Login page
+
 •	/welcome → Chat interface
+
 •	/get → Receives and processes user messages
 Logic Layer:
+
 •	Python dictionary storing responses for agriculture topics
+
 •	Future integration point for ML/NLP models
 ________________________________________________________________________________________________________________________________________________________________
 
 🧠 **Future Enhancements**
 
 ✅ Integrate Natural Language Processing (NLP) models (e.g., BERT, GPT)
+
 ✅ Add Weather API for real-time recommendations
+
 ✅ Develop Mobile App version using React Native / Flutter
+
 ✅ Connect with IoT sensors for soil and crop data
+
 ✅ Add Voice Input / Output support for accessibility
