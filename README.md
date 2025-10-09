@@ -11,9 +11,13 @@ ________________________________________________________________________________
 ✨ **Key Benefits**
 
 • 🤖 Instant AI-based responses to agricultural queries
+
 • 🌱 Multilingual Support (English + Tamil) for inclusive access
+
 • ☁️ Web-based and lightweight — easy to deploy anywhere
+
 • 💬 Interactive Chat Interface for real-time assistance
+
 • 📈 Scalable backend — ready for integration with IoT sensors or APIs (weather, soil data, etc.)
 ________________________________________________________________________________________________________________________________________________________________
 
