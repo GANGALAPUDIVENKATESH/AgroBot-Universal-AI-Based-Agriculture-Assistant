@@ -4,59 +4,67 @@ from flask_bcrypt import Bcrypt
 from chatbot_model import get_response
 import os
 
-# Flask app setup
+# -----------------------------
+# 1. Flask App Configuration
+# -----------------------------
 app = Flask(__name__)
-app.secret_key = "secret123"
+app.secret_key = "secret123"  # For production, use a stronger random key
 
-# Database setup
+# -----------------------------
+# 2. Database Setup
+# -----------------------------
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 
-# User Model
+# -----------------------------
+# 3. User Model
+# -----------------------------
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(150), nullable=False, unique=True)
     password = db.Column(db.String(150), nullable=False)
 
-# Create database if not exists
+# Create the database and tables
 with app.app_context():
     db.create_all()
 
-# ----------- ROUTES -----------
-
-# Home (Chatbot) - Requires Login
+# -----------------------------
+# 4. Home Page (Chatbot)
+# -----------------------------
 @app.route("/")
 def home():
     if "user_id" not in session:
         return redirect(url_for("login"))
-    return render_template("index.html")
+    return render_template("index.html", username=session.get("username"))
 
-# Signup
+# -----------------------------
+# 5. Register
+# -----------------------------
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
 
-        # Check if username exists
         existing_user = User.query.filter_by(username=username).first()
         if existing_user:
-            flash("Username already exists. Try another.", "error")
+            flash("Username already exists! Please choose another.", "error")
             return redirect(url_for("register"))
 
-        # Hash password
-        hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
-
-        # Save new user
+        hashed_password = bcrypt.generate_password_hash(password).decode("utf-8")
         new_user = User(username=username, password=hashed_password)
+
         db.session.add(new_user)
         db.session.commit()
-        flash("Account created successfully! Please login.", "success")
+        flash("Registration successful! Please log in.", "success")
         return redirect(url_for("login"))
+
     return render_template("register.html")
 
-# Login
+# -----------------------------
+# 6. Login
+# -----------------------------
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -70,18 +78,23 @@ def login():
             flash("Login successful!", "success")
             return redirect(url_for("home"))
         else:
-            flash("Invalid username or password", "error")
+            flash("Invalid username or password.", "error")
             return redirect(url_for("login"))
+
     return render_template("login.html")
 
-# Logout
+# -----------------------------
+# 7. Logout
+# -----------------------------
 @app.route("/logout")
 def logout():
     session.clear()
     flash("You have been logged out.", "info")
     return redirect(url_for("login"))
 
-# Chatbot API
+# -----------------------------
+# 8. Chatbot API
+# -----------------------------
 @app.route("/get", methods=["POST"])
 def chatbot_response():
     if "user_id" not in session:
@@ -91,7 +104,8 @@ def chatbot_response():
     bot_reply = get_response(user_message)
     return jsonify({"response": bot_reply})
 
-# Run app
+# -----------------------------
+# 9. Run the App
+# -----------------------------
 if __name__ == "__main__":
     app.run(debug=True)
-
