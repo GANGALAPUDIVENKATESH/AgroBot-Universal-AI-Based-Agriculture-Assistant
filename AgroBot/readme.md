@@ -1,11 +1,11 @@
 🌾 **AgroBot: Universal AI-Based Agriculture Assistant**
 ________________________________________
-🔹** Project Overview**
+🔹 **Project Overview**
 
 Agriculture plays a vital role in sustaining global economies, yet farmers often struggle with limited access to accurate and timely information about crop care, soil management, and weather conditions. AgroBot is an AI-driven agriculture assistant built to bridge this gap — providing intelligent, real-time guidance to farmers through a bilingual (English + Tamil) conversational chatbot.
 This system integrates Artificial Intelligence with a Flask-based web application, offering an interactive interface where users can get answers related to crop cultivation, fertilizer use, irrigation methods, pest management, and modern farming techniques — all in one place.
 ________________________________________
-✨** Key Benefits**
+✨ Key Benefits
 
 • 🤖 AI-powered Chatbot — Provides instant, context-based agricultural responses.
 
