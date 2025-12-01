@@ -1,4 +1,4 @@
-# 🌾 AgroBot-Universal-AI-Based-Agriculture-Assistant
+# 🌾 AgroBot- Universal AI Based Agriculture Assistant
 
 🔹 **Project Overview**
 _______________________________________________________________________________________________________________________________________________________________
